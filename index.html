@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER SECTION -->
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Deployed using CI/CD, Docker & Jenkins</p>
-    </header>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2 class="logo">MyPortfolio</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi! I am a beginner web developer learning DevOps. 
-            This portfolio website is automatically deployed using
-            GitHub, Jenkins, Docker and Nginx.
-        </p>
-    </section>
+  <!-- HOME SECTION -->
+  <section id="home" class="home">
+    <h1>Welcome 👋</h1>
+    <p>I am a beginner developer learning DevOps, CI/CD, Jenkins, Docker and GitHub automation.</p>
+    <button onclick="scrollToContact()">Hire Me</button>
+  </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Git & GitHub</li>
-            <li>Docker</li>
-            <li>Jenkins CI/CD</li>
-        </ul>
-    </section>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am passionate about web development and DevOps technologies.
+      I enjoy building automated pipelines, containerized applications,
+      and learning new tools every day. This project demonstrates a
+      working CI/CD pipeline with Jenkins and Docker.
+    </p>
+    <p>
+      On this page, you will see my skills, projects and contact section.
+      Feel free to explore!
+    </p>
+  </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <input type="text" id="name" placeholder="Enter your name">
-        <button onclick="showMessage()">Submit</button>
-        <p id="message"></p>
-    </section>
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
 
-    <script src="script.js"></script>
+    <div class="skill-card">HTML & CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">Docker</div>
+    <div class="skill-card">Jenkins CI/CD</div>
+    <div class="skill-card">Git & GitHub</div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Portfolio Website CI/CD</h3>
+      <p>
+        A complete automated deployment system using Jenkins, Docker and GitHub.
+        Whenever code is pushed, the pipeline builds and deploys a new container.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Password Validator UI</h3>
+      <p>
+        A frontend application that checks password strength in real-time
+        using JavaScript and CSS indicator bars.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>
+        A simple web app that fetches weather data from an API
+        and displays temperature, humidity and weather conditions.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="email" id="email" placeholder="Enter your email">
+    <textarea id="msg" placeholder="Enter message"></textarea>
+    <button onclick="sendMessage()">Submit</button>
+    <p id="result"></p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>

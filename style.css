@@ -1,55 +1,81 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: #f9f9f9;
+  scroll-behavior: smooth;
 }
 
-header {
-    background: #007acc;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007acc;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
 }
 
+.navbar h2 {
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* SECTIONS */
 section {
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 8px;
+  padding: 60px 10%;
+  background: #fff;
+  margin: 30px auto;
+  border-radius: 10px;
 }
 
-h2 {
-    color: #007acc;
+/* SKILLS */
+.skill-card {
+  padding: 12px;
+  margin: 8px 0;
+  background: #e1f0ff;
+  border-radius: 8px;
+  display: inline-block;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* PROJECT CARDS */
+.project-card {
+  background: #eef7ff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
-ul li {
-    background: #e1f0ff;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+/* CONTACT */
+#contact input,
+#contact textarea {
+  width: 60%;
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
-#contact input {
-    padding: 10px;
-    width: 60%;
-    margin-right: 10px;
+button {
+  padding: 12px 20px;
+  border: none;
+  background: #007acc;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-#contact button {
-    padding: 10px 15px;
-    background: #007acc;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#contact button:hover {
-    background: #005f99;
+button:hover {
+  background: #005e99;
 }
